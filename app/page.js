@@ -1,5 +1,7 @@
 
 "use client"
+/* eslint-disable react-hooks/rules-of-hooks */
+
 
 import { useState, useEffect, React }  from 'react'
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css'
@@ -12,6 +14,7 @@ function page() {
 
   const [gastos, setGastos] = useState([]); 
   const [offset, setOffset] = useState(0);
+  const [keyNumb, setKeyNumb] = useState(0); 
 
   const deleteGasto = async (id) => {
     try {
@@ -85,6 +88,7 @@ function page() {
                                   
                                   gastos.map((gasto) => 
                                       <Gasto 
+                                          key={setKeyNumb(keyNumb + 1)}
                                           eliminarGasto={deleteGasto}
                                           id={gasto.gas_id}
                                           desc={gasto.gas_descripcion}
