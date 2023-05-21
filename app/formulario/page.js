@@ -2,7 +2,7 @@
 
 import React, {useState} from 'react'
 import './Formulario.css'
-import '../../../node_modules/bootstrap/dist/css/bootstrap.min.css'
+import '../../node_modules/bootstrap/dist/css/bootstrap.min.css'
 import Link from 'next/link'
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';

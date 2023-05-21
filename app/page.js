@@ -3,11 +3,9 @@
 
 import { useState, useEffect, React }  from 'react'
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css'
-import styles from './Gastos.css'
+import './Gastos.css'
 import AddButton from './components/AddButton'
 import Search from './components/Search'
-import Link from 'next/link'
-import Navbar from './components/Navbar'
 import Gasto from './components/Gasto'
 
 function page() {
