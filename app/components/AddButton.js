@@ -1,6 +1,6 @@
 import React from 'react'
 import styles from './Styles/AddButton.css'
-import '../../../node_modules/bootstrap/dist/css/bootstrap.min.css'
+import '../../node_modules/bootstrap/dist/css/bootstrap.min.css'
 // import { IoAdd } from 'react-icons/io' 
 import Link from 'next/link'; 
 
