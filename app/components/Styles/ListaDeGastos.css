@@ -1,0 +1,36 @@
+/* .formulario { 
+    border: 2px solid #212529;
+} */
+
+/* .tabla {
+     border: 2px solid #212529;
+} */
+
+.columna {
+    border: 2px solid #212529;
+}
+
+.gasto-title { 
+    font-size: 24px;
+}
+
+.detalle-gasto {
+    font-size: 14px;
+}
+
+.gasto { 
+    line-height: 4px;
+    border-top-color: rgba(0,0,0,.12);
+    border-top-style: solid;
+    border-top-width: 1px; 
+    /* box-shadow: 1px 5px 20px 0.5px #000 !important; */
+    /* border: 0.5px solid #212529;  */
+}
+
+.iconos {
+    padding: 5px;
+}
+
+.buttons-guided {
+    margin-top: 10px; 
+}
