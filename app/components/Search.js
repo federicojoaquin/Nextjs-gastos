@@ -1,6 +1,6 @@
 import React from 'react'
 import './Styles/Search.css'
-import '../../../node_modules/bootstrap/dist/css/bootstrap.min.css'
+import '../../node_modules/bootstrap/dist/css/bootstrap.min.css'
 
 function Search() {
   return (
