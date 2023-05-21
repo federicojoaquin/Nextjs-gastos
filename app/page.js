@@ -88,7 +88,7 @@ function page() {
                                   
                                   gastos.map((gasto) => 
                                       <Gasto 
-                                          key={setKeyNumb(keyNumb + 1)}
+                                          key={gasto.gas_id}
                                           eliminarGasto={deleteGasto}
                                           id={gasto.gas_id}
                                           desc={gasto.gas_descripcion}
