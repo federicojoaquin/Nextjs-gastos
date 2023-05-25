@@ -19,7 +19,7 @@ function page() {
   const deleteGasto = async (id) => {
     try {
       console.log(id)
-      const deleteGas = await fetch(`http://localhost:9000/gastos/${id}`, {
+      const deleteGas = await fetch(`https://gastosdemo-api.onrender.com/gastos/${id}`, {
         method: "DELETE", 
       })
       const gastosNew = gastos.filter(gasto => gasto.gas_id !== id); 
@@ -35,7 +35,7 @@ function page() {
 
   const fetchData = async () => {
     try {
-      const response = await fetch(`http://localhost:9000/gastos?change=${offset}`);
+      const response = await fetch(`https://gastosdemo-api.onrender.com/gastos?change=${offset}`);
       const gastos = await response.json();
       setGastos(gastos);
     } catch (error) {
@@ -50,8 +50,6 @@ function page() {
   const goToNextPage = () => {
     setOffset((prevOffset) => prevOffset + 4);
   };
-
-  
 
 
   return (

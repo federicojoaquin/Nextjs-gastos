@@ -49,7 +49,7 @@ function Formulario() {
     // props.onSubmit(gastoNuevo); 
     console.log(gastoNuevo);
 
-    fetch('http://localhost:9000/gastos', {
+    fetch('https://gastosdemo-api.onrender.com/gastos', {
       method: "POST", 
       headers: {
         "Content-Type": "application/json", 
