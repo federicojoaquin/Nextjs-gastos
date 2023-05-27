@@ -121,8 +121,16 @@ function Formulario() {
                     name="frec" id="frec"
                     onChange={handleForm}
                     value = {formData.frec}></input>
-                  
-                    <button type="submit" onClick={handleShow} className="button-submit">Agregar</button>
+
+
+                    <div className='row justify-content-center my-3'>
+                      <div className='col-md-2'>
+                        <div className='row justify-content-center'>
+                          <button type="submit" onClick={handleShow} className="button-submit">Agregar</button>
+                        </div> 
+                      </div>  
+                    </div>
+                    
                 </form> 
                           
             </div>
@@ -130,10 +138,10 @@ function Formulario() {
              
         </div> 
         <div className='row justify-content-center'>
-          <div className='col-md-2'>
-            <div className='row justify-content-center'>
-              <Link className='buttonVolver btn btn-outline-secondary' href='/'>Volver</Link>
-            </div> 
+          <div className='col-md-2 col-sm-6' style={{display: 'flex', justifyContent: 'center'}}>
+            
+            <Link className='buttonVolver btn btn-outline-secondary' href='/'>Volver</Link>
+             
           </div>  
         </div> 
       </div>

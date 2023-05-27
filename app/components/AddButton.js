@@ -11,7 +11,7 @@ function AddButton() {
       <Link href='/formulario' className="float">
       
         <i className="fa fa-whatsapp my-float">
-            {/* <IoAdd /> */}
+          <i class="bi bi-plus-circle addIcon"></i>
         </i>
       
       </Link>

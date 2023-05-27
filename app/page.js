@@ -5,6 +5,8 @@
 
 import { useState, useEffect, React }  from 'react'
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css'
+import '../node_modules/bootstrap/dist/css/bootstrap.min.css'
+import '../node_modules/bootstrap-icons/font/bootstrap-icons.css'
 import './Gastos.css'
 import AddButton from './components/AddButton'
 import Search from './components/Search'
@@ -72,7 +74,7 @@ function page() {
                                         <button className="btn btn-light buttonLink" onClick={goToNextPage}>Siguiente</button>
                                     </div>
                                     {/* Copiar lo del search */}
-                                    <Search /> 
+                                    {/* <Search />  */}
                                 </div>
                             
                             </div>
