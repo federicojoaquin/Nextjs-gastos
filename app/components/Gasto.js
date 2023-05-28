@@ -55,7 +55,7 @@ function Gasto({id, desc, monto, fecha, tipo, frec, eliminarGasto, actualizarGat
 
       </Modal>
 
-      <FormEdit showEdit={showEdit} handleCloseEdit={handleCloseEdit}/>
+      <FormEdit showEdit={showEdit} handleCloseEdit={handleCloseEdit} id={id} desc={desc} monto={monto} fecha={fecha} tipo={tipo} frec={frec} />
 
       
     </>
