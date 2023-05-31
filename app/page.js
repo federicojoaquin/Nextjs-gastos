@@ -58,7 +58,7 @@ function page() {
     <>
         
             <div className='main'>
-              <h1 className='mainTitle'>Formulario Gastos</h1>
+              <h1 className='mainTitle'>Gastos</h1>
                 <AddButton />
                 <div className='gastosContainer'>
                     <div className='container'>
@@ -67,11 +67,15 @@ function page() {
                                 <Formulario onSubmit={agregarGastos}/>
                             </div> */}
                             <div className='tabla col-md-12 col-sm-12'>
-                                <div className='row justify-content-around'>
-                                    <div className='col-md-4 my-3'>
+                                <div className='row justify-content-center'>
+                                    <div className='col-md-12 my-3' style={{display: 'flex', justifyContent: 'center'}}>
+          
+                                            <button className="btn btn-light buttonLink" onClick={fetchData}>Obtener/refrescar</button>
+                                            <button className="btn btn-light buttonLink" onClick={goToPreviousPage} disabled={offset === 0}>Anterior</button>
+                                            <button className="btn btn-light buttonLink" onClick={goToNextPage}>Siguiente</button>
+                                      
                                         {/* <Link href='/Gastos' className="btn btn-outline-dark buttonLink">Refrescar</Link> */}
-                                        <button className="btn btn-light buttonLink" onClick={goToPreviousPage} disabled={offset === 0}>Anterior</button>
-                                        <button className="btn btn-light buttonLink" onClick={goToNextPage}>Siguiente</button>
+                                        
                                     </div>
                                     {/* Copiar lo del search */}
                                     {/* <Search />  */}
