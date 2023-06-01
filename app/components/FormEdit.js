@@ -18,6 +18,7 @@ function FormEdit({ showEdit, handleCloseEdit, id, desc, monto, fecha, tipo, fre
     gas_frec: frec,
   });
 
+
   console.log(formData);
 
   const handleForm = (e) => {
@@ -59,7 +60,12 @@ function FormEdit({ showEdit, handleCloseEdit, id, desc, monto, fecha, tipo, fre
         "Content-Type": "application/json", 
       }, 
       body: JSON.stringify(updatedFormData), 
-    }); 
+    }).then(() => {
+      alert("¡Gasto modificado!"); 
+    })
+    .catch((error) => {
+      console.error("Error al modificar el gasto:", error);
+    });; 
 
 
   }
@@ -133,7 +139,9 @@ function FormEdit({ showEdit, handleCloseEdit, id, desc, monto, fecha, tipo, fre
                 Cerrar
             </Button>
         </Modal.Footer>
+        
       </Modal>
+      
 
     </>
   );
