@@ -8,6 +8,7 @@ import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 
 function FormEdit({ showEdit, handleCloseEdit, id, desc, monto, fecha, tipo, frec }) {
+  
   const [formData, setFormData] = useState({
     gas_id: id,
     gas_descripcion: desc,
@@ -41,6 +42,12 @@ function FormEdit({ showEdit, handleCloseEdit, id, desc, monto, fecha, tipo, fre
     };
       
     setFormData(updatedFormData);
+
+    if (!updatedFormData.gas_fecha) {
+      alert("Por favor, completa la fecha antes de enviar el formulario.");
+      return;
+    }
+
       
 
     // props.onSubmit(gastoNuevo); 
@@ -127,6 +134,7 @@ function FormEdit({ showEdit, handleCloseEdit, id, desc, monto, fecha, tipo, fre
             </Button>
         </Modal.Footer>
       </Modal>
+
     </>
   );
 }
