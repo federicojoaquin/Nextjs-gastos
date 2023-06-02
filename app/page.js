@@ -37,7 +37,7 @@ function page() {
 
   const fetchData = async () => {
     try {
-      const response = await fetch(`https://gastosdemo-api.onrender.com/gastos?change=${offset}`, { cache: 'no-store' });
+      const response = await fetch(`https://gastosdemo-api.onrender.com/gastos?change=${offset}`, {next: { revalidate: 10 }});
       const gastos = await response.json();
       setGastos(gastos);
     } catch (error) {
