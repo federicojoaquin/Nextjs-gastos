@@ -276,7 +276,7 @@ function Page() {
       <div className="main">
         <h1 className="mainTitle">Gastos</h1>
         <div className='container'>
-          <p style={{textAlign: 'center'}}>App de gastos. <b>ACLARACIÓN: </b>La primer llamada a la API probablemente se demore al obtener los datos, 
+          <p style={{textAlign: 'center'}}>App de gastos. <b>ACLARACIÓN: </b>La primer llamada a la API probablemente se demore 20 segundos al obtener los datos, 
           luego ya no habrá demora. Esto se debe al servicio en donde se desplego la base de datos y la API (Render.com: servicio gratuito para esta version DEMO), pero funciona correctamente.</p>
         </div>
         
