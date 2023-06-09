@@ -309,7 +309,7 @@ function Page() {
             {/* linea */}
             <div className="row">
               <div className="col-md-12">
-                {offset === 0 && gastos.length === 0 && <p className="text-center">Refresque para visualizar</p>}
+                {offset === 0 && gastos.length === 0 && <p className="text-center">Cargando...</p>}
                 {offset > 0 && gastos.length === 0 && <p className="text-center">No hay nada más que mostrar</p>}
                 {gastos.length > 0 &&
                   gastos.map((gasto) => (
