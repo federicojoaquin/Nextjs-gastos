@@ -228,6 +228,7 @@ import './Gastos.css';
 import AddButton from './components/AddButton';
 import Search from './components/Search';
 import Gasto from './components/Gasto';
+import { headers } from 'next/dist/client/components/headers';
 
 function Page() {
   const [gastos, setGastos] = useState([]);
@@ -253,7 +254,8 @@ function Page() {
   const fetchData = async () => {
     try {
       setLoading(true);
-      const response = await fetch(`https://gastosdemo-api.onrender.com/gastos?change=${offset}`, { next: { revalidate: 10 } });
+      const response = await fetch(`https://gastosdemo-api.onrender.com/gastos?change=${offset}`, 
+      { cache:'no-store'});
       const gastos = await response.json();
       setGastos(gastos);
       setLoading(false);
